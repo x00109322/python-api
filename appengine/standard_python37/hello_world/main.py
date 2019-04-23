@@ -15,6 +15,7 @@
 # [START gae_python37_app]
 import numpy
 from flask import Flask
+from flask_json import FlaskJSON, as_json
 from pandas import read_csv
 import math
 from keras.models import Sequential
@@ -127,12 +128,13 @@ y = json.loads(json_string)
 # If `entrypoint` is not defined in app.yaml, App Engine will look for an app
 # called `app` in `main.py`.
 app = Flask(__name__)
-
+json = FlaskJSON(app)
 
 @app.route('/')
+@as_json
 def hello():
     """Return a friendly HTTP greeting."""
-    return pred
+    return prediction
 
 
 if __name__ == '__main__':
