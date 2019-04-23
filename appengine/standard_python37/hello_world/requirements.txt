@@ -4,3 +4,4 @@ numpy==1.16.2
 tensorflow==1.13.1
 pandas==0.24.2
 scikit-learn==0.20.3
+Flask-JSON==0.3.3
