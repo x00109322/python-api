@@ -103,7 +103,7 @@ testPredictPlot[:, :] = numpy.nan
 testPredictPlot[len(trainPredict)+(look_back*2)+1:len(dataset)-1, :] = testPredict
 
 # Next day
-last = 1.13
+last = 1.17
 x_input = numpy.array(last)
 maxDataset = max(dataset)
 minDataset = min(dataset)
