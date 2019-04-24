@@ -1,5 +1,5 @@
 runtime: python37
-instance_class: B8
+instance_class: F4_1G
 
 manual_scaling:
-  instances: 1
+  instances: 5
