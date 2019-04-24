@@ -1,4 +1,6 @@
-runtime: python37
+runtime: python27
 instance_class: B8
+threadsafe: true
+
 manual_scaling:
-  instances: 5
+  instances: 1
