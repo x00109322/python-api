@@ -5,3 +5,4 @@ tensorflow==1.13.1
 pandas==0.24.2
 scikit-learn==0.20.3
 Flask-JSON==0.3.3
+gunicorn==19.3.0
