@@ -1,2 +1,17 @@
 runtime: python37
-instance_class: F4_1G
+
+resources:
+  cpu: 10
+  memory_gb: 2.3
+  disk_size_gb: 10
+  volumes:
+  - name: ramdisk1
+    volume_type: tmpfs
+    size_gb: 0.5
+    
+automatic_scaling:
+  min_num_instances: 2
+  max_num_instances: 15
+  cool_down_period_sec: 180
+  cpu_utilization:
+    target_utilization: 0.6
